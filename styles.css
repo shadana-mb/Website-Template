@@ -70,4 +70,90 @@ span {
 
 .features {
   list-style-type: none;
+  line-height: 3.2em;
+  margin-bottom: 2em;
+}
+
+.features i {
+  font-size: 1.6em;
+  color: black;
+}
+
+.features li {
+  color: #757575;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  align-items: center;
+}
+
+.btn {
+  padding: 1em 2em;
+  margin-right: 1em;
+  font-size: 1.1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #58a87c;
+  border: none;
+}
+
+.btn-default {
+  border: 2px solid #58a87c;
+}
+
+.input-fields {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  display: inline-block;
+  padding: 1em;
+  border-radius: 5px;
+  border: 2px solid #58a87c;
+  width: 47%;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #58a87c;
+  margin: 2em 0;
+}
+
+.contact-info {
+  margin-top: 3em;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+.info {
+  text-decoration: underline dotted #757575;
+}
+
+.social {
+  margin-top: 1.5em;
+  list-style-type: none;
+  display: flex;
+}
+
+.social a {
+  color: black;
+  margin-right: 1.5em;
+  font-size: 1.5em;
+}
+
+footer {
+  padding: 2.5em;
+  color: #c3c7c5;
+}
+
+footer a {
+  color: #c3c7c5;
 }

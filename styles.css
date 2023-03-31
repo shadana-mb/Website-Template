@@ -57,6 +57,10 @@ h3 {
   padding: 2.5em;
 }
 
+.hero .content {
+  padding: 0;
+}
+
 p {
   color: #757575;
   line-height: 1.5em;
@@ -69,9 +73,11 @@ span {
 }
 
 .features {
+  display: flex;
   list-style-type: none;
   line-height: 3.2em;
   margin-bottom: 2em;
+  flex-wrap: wrap;
 }
 
 .features i {
@@ -84,6 +90,7 @@ span {
   display: grid;
   grid-template-columns: 15% 85%;
   align-items: center;
+  width: 100%;
 }
 
 .btn {
@@ -156,4 +163,34 @@ footer {
 
 footer a {
   color: #c3c7c5;
+}
+
+@media only screen and (min-width: 740px) {
+  .features li {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1155px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .title {
+    text-align: right;
+    padding-right: 10em;
+  }
+
+  .title::before {
+    background: #58a87c;
+    content: "";
+    display: block;
+    margin-top: 1rem;
+    position: absolute;
+    width: 2px;
+    height: calc(100% + 11rem);
+    left: calc(50vw - 5rem);
+    margin-top: 4.5rem;
+  }
 }

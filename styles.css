@@ -53,8 +53,14 @@ h3 {
   width: 49%;
 }
 
-.content {
+.content,
+.contact-info {
   padding: 2.5em;
+}
+
+.subtitle,
+.subcontent {
+  padding: 1em 2.5em;
 }
 
 .hero .content {
@@ -151,7 +157,7 @@ h4 {
 }
 
 .social a {
-  color: black;
+  color: #58a87c;
   margin-right: 1.5em;
   font-size: 1.5em;
 }
@@ -159,6 +165,7 @@ h4 {
 footer {
   padding: 2.5em;
   color: #c3c7c5;
+  text-align: center;
 }
 
 footer a {
@@ -177,20 +184,37 @@ footer a {
     grid-template-columns: 1fr 1fr;
   }
 
-  .title {
+  .title,
+  .subtitle,
+  .contact-info {
     text-align: right;
     padding-right: 10em;
+    padding-left: 8em;
   }
 
-  .title::before {
-    background: #58a87c;
-    content: "";
-    display: block;
-    margin-top: 1rem;
-    position: absolute;
-    width: 2px;
-    height: calc(100% + 11rem);
-    left: calc(50vw - 5rem);
-    margin-top: 4.5rem;
+  .subtitle {
+    background: url("/images/bg.jpg");
+  }
+
+  .social {
+    flex-direction: row-reverse;
+  }
+
+  .social a {
+    margin-right: 0;
+    margin-left: 1.5em;
+  }
+
+  .contact-info {
+    margin-top: -25em;
+    background: url("images/bg.jpg");
+    padding-bottom: 10em;
+  }
+
+  footer {
+    margin: -6em 0 0 50vw;
+    padding-left: 2.5rem;
+    color: #c3c7c5;
+    text-align: left;
   }
 }
